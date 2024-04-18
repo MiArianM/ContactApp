@@ -17,7 +17,7 @@ box-shadow: 5px 5px 15px 5px rgba(7, 7, 7, 0.285);
 .container {
   width: 75%;
 }
-button{
+.button{
     padding: 12px 20px;
     border-radius: 15px;
     width: 300px;

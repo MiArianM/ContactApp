@@ -6,8 +6,9 @@ function Form() {
         <input type="text" placeholder="Write Your First Name . ."/>
         <input type="text" placeholder="Write Your Last Name . ."/>
         <input type="text" placeholder="Your Email Here !"/>
+        
         <input type="number" placeholder="Your Phone Number Here !"/>
-        <button>Add Contact</button>
+        <button className={styles.button}>Add Contact</button>
       </form>
     </div>
   );
