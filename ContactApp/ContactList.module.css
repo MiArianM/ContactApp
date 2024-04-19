@@ -9,27 +9,32 @@ li {
   border-radius: 20px;
 }
 li > div {
+  width: 30%;
   display: flex;
   padding: 10px;
 }
 li>div>i{
-  font-size: 25px;
+  font-size: 21px;
   padding: 1px;
 }
 li > div > h4 {
-  font-size: 20px;
+  font-size: 18px;
   margin-left: 3px;
 }
+li>div:last-child{
+  width: 5%;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
 li>div>button{
+  width: 10%;
   background: transparent;
   border: none;
   font-size: 20px;
   margin-top: -2px;
   cursor: pointer;
-  transition: all 0.15s ease;
 }
-li>div>button:hover{
+li>div:last-child:hover{
   margin-top: -15px;
   margin-left: 9px;
-  font-size: 25px;
 }

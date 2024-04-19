@@ -1,13 +1,17 @@
 import { useState } from "react";
 import styles from "./Form.module.css";
+import { v4 } from "uuid";
+import ContactList from "./ContactList.jsx";
 function Form() {
   const [form, setForm] = useState({
     fname: "",
     lname: "",
     email: "",
     number: "",
+    id: "",
   });
   const [isError, setError] = useState(true);
+  const [list, setList] = useState([]);
   const formHandler = (event) => {
     const value = event.target.value;
     const name = event.target.name;
@@ -22,6 +26,8 @@ function Form() {
       return;
     } else {
       setError(true);
+      const finalform = { ...form, id: v4() };
+      setList((list) => [...list, finalform]);
       setForm({
         fname: "",
         lname: "",
@@ -91,6 +97,7 @@ function Form() {
           </button>
         </div>
       </div>
+      <ContactList UserData={list} />
     </div>
   );
 }
