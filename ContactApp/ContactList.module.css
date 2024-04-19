@@ -8,3 +8,28 @@ li {
   padding: 15px;
   border-radius: 20px;
 }
+li > div {
+  display: flex;
+  padding: 10px;
+}
+li>div>i{
+  font-size: 25px;
+  padding: 1px;
+}
+li > div > h4 {
+  font-size: 20px;
+  margin-left: 3px;
+}
+li>div>button{
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  margin-top: -2px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+li>div>button:hover{
+  margin-top: -15px;
+  margin-left: 9px;
+  font-size: 25px;
+}
