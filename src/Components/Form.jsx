@@ -18,7 +18,10 @@ function Form() {
     const name = event.target.name;
     setForm({ ...form, [name]: value });
   };
-
+  const DeleteButtonHandler = (id) => {
+    const finallist = list.filter((info) => info.id !== id);
+    setList(finallist)
+  };
   const addingHandler = (event) => {
     console.log(form);
     event.preventDefault();
@@ -81,7 +84,7 @@ function Form() {
           </button>
         </div>
       </div>
-      <ContactList UserData={list} />
+      <ContactList UserData={list} DeleteButtonHandler={DeleteButtonHandler}/>
     </div>
   );
 }

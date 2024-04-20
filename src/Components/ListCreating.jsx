@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-function ListCreating({ userinfo }) {
+function ListCreating({ userinfo, DeleteButtonHandler }) {
   return (
     <li key={userinfo.id}>
       <div>
@@ -17,7 +17,7 @@ function ListCreating({ userinfo }) {
         <h4>{userinfo.number}</h4>
       </div>
       <div>
-        <button>
+        <button onClick={() => DeleteButtonHandler(userinfo.id)}>
           <i className="fa-solid fa-trash-can"></i>
         </button>
       </div>
