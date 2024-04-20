@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "../Styles/Form.module.css";
 import { v4 } from "uuid";
 import ContactList from "../Components/ContactList.jsx";
+import inputs from "../inputSTR.js";
 function Form() {
   const [form, setForm] = useState({
     fname: "",
@@ -46,34 +47,17 @@ function Form() {
       }}
     >
       <form className={styles.container}>
-        <input
-          type="text"
-          placeholder="Write Your First Name . ."
-          value={form.fname}
-          onChange={formHandler}
-          name="fname"
-        />
-        <input
-          type="text"
-          placeholder="Write Your Last Name . ."
-          value={form.lname}
-          onChange={formHandler}
-          name="lname"
-        />
-        <input
-          type="text"
-          placeholder="Your Email Here !"
-          value={form.email}
-          onChange={formHandler}
-          name="email"
-        />
-        <input
-          type="number"
-          placeholder="Your Phone Number Here !"
-          value={form.number}
-          onChange={formHandler}
-          name="number"
-        />
+        {inputs.map((input, index) => (
+          <input
+            value={form[input.name]}
+            placeholder={input.placeholder}
+            type={input.type}
+            name={input.name}
+            onChange={formHandler}
+            key={index}
+          />
+        ))}
+
         <button type="submit" className={styles.button} onClick={addingHandler}>
           Add Contact
         </button>
