@@ -59,7 +59,7 @@ function Form() {
         ))}
 
         <button type="submit" className={styles.button} onClick={addingHandler}>
-          Add Contact
+          <h5>Add Contact</h5>
         </button>
       </form>
       <div className={isError ? styles.nothing : styles.error}>
