@@ -1,7 +1,7 @@
 import { useState } from "react";
-import styles from "./Form.module.css";
+import styles from "../Styles/Form.module.css";
 import { v4 } from "uuid";
-import ContactList from "./ContactList.jsx";
+import ContactList from "../Components/ContactList.jsx";
 function Form() {
   const [form, setForm] = useState({
     fname: "",

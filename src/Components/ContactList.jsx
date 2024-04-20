@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
-import liststyles from "./ContactList.module.css";
+import liststyles from "../Styles/ContactList.module.css";
 function ContactList({ UserData }) {
   const deletehandler = (event) => {
     const li = event.target.parentElement.parentElement.parentElement;
