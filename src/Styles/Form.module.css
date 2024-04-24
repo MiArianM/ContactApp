@@ -211,3 +211,48 @@ input {
     left: 25%;
   }
 }
+/*Responsive Section - - - - - - -  - - -  - - - - */
+
+/*At All*/
+@media (max-width: 1768px) {
+  input {
+    width: 35%;
+  }
+  .container {
+    width: 73%;
+  }
+}
+
+/*input PlaceHolder font*/
+@media (max-width: 770px) {
+  ::placeholder {
+    font-size: 10px;
+  }
+}
+@media (max-width: 640px) {
+  ::placeholder {
+    font-size: 8px;
+  }
+}
+@media (max-width: 554px) {
+  ::placeholder {
+    font-size: 6px;
+  }
+}
+@media (max-width: 467px) {
+  ::placeholder {
+    font-size: 4px;
+  }
+}
+
+/*Add Button*/
+@media (max-width: 507px) {
+  .button {
+    width: 200px;
+  }
+}
+@media (max-width: 375px) {
+  .button {
+    width: 150px;
+  }
+}

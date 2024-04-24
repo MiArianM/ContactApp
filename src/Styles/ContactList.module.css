@@ -9,11 +9,10 @@ li {
   border-radius: 20px;
 }
 li > div {
-  width: 30%;
+  width: 45%;
   display: flex;
-  padding: 10px;
 }
-li>div>i{
+li > div > i {
   font-size: 21px;
   padding: 1px;
 }
@@ -21,12 +20,15 @@ li > div > h4 {
   font-size: 18px;
   margin-left: 3px;
 }
-li>div:last-child{
+#Number {
+  width: 25%;
+}
+li > div:last-child {
   width: 5%;
   cursor: pointer;
   transition: all 0.15s ease;
 }
-li>div>button{
+li > div > button {
   width: 10%;
   background: transparent;
   border: none;
@@ -34,7 +36,59 @@ li>div>button{
   margin-top: -2px;
   cursor: pointer;
 }
-li>div:last-child:hover{
+li > div:last-child:hover {
   margin-top: -15px;
   margin-left: 9px;
+}
+/*Responsive Section - - - - - - -  - - -  - - - - */
+
+/*Contact list Sections*/
+@media (max-width: 1020px) {
+  li > div > i {
+    font-size: 17px;
+  }
+  li > div > h4 {
+    font-size: 15px;
+  }
+  li > div > button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 876px) {
+  li > div > i {
+    font-size: 13px;
+  }
+  li > div > h4 {
+    font-size: 11px;
+  }
+  li > div > button {
+    font-size: 12px;
+  }
+}
+@media (max-width: 696px) {
+  li {
+    width: 95%;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 490px) {
+  li > div > i {
+    font-size: 11px;
+  }
+  li > div > h4 {
+    font-size: 9px;
+  }
+  li > div > button {
+    font-size: 10px;
+  }
+}
+@media (max-width: 427px) {
+  li {
+    width: 100%;
+    padding: 5px;
+  }
+}
+@media (max-width: 570px) {
+}
+@media (max-width: 570px) {
 }

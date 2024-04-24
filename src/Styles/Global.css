@@ -14,3 +14,25 @@ ul {
   align-items: center;
   border: rgba(128, 128, 128, 0.664) 1px solid;
 }
+/*Responsive Section - - - - - - -  - - -  - - - - */
+
+/*Contact list Sections*/
+
+@media (max-width: 696px) {
+
+  ul{
+    width: 80%;
+  }
+}
+@media (max-width: 586px) {
+
+  ul{
+    width: 90%;
+  }
+}
+@media (max-width: 427px) {
+
+  ul{
+    width: 95%;
+  }
+}

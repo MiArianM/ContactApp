@@ -1,3 +1,5 @@
+import liststyles from "../Styles/ContactList.module.css";
+
 /* eslint-disable react/prop-types */
 function ListCreating({ userinfo, DeleteButtonHandler }) {
   return (
@@ -12,12 +14,12 @@ function ListCreating({ userinfo, DeleteButtonHandler }) {
         <i className="fa-solid fa-envelope"></i>
         <h4>{userinfo.email}</h4>
       </div>
-      <div>
+      <div id={liststyles.Number}>
         <i className="fa-solid fa-square-phone"></i>
         <h4>{userinfo.number}</h4>
       </div>
-      <div>
-        <button onClick={() => DeleteButtonHandler(userinfo.id)}>
+      <div onClick={() => DeleteButtonHandler(userinfo.id)}>
+        <button>
           <i className="fa-solid fa-trash-can"></i>
         </button>
       </div>
